@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Get CovidFreeNated- Registration</title>
-    <link rel="stylesheet" href="auth-style.css"/>
+    <link rel="stylesheet" href="auth-style.css?version=51"/>
     <script src="validation.js"></script> 
 </head>
 <body>

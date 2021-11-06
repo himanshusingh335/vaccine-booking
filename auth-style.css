@@ -1,14 +1,13 @@
 body {
-    background: #3e4144;
-}
+    background: white;}
 .form {
     margin: 50px auto;
-    width: 300px;
+    width: 500px;
     padding: 30px 25px;
     background: white;
 }
 h1.login-title {
-    color: #666;
+    color: green;
     margin: 0px auto 25px;
     font-size: 25px;
     font-weight: 300;
@@ -16,19 +15,19 @@ h1.login-title {
 }
 .login-input {
     font-size: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid green;
     padding: 10px;
     margin-bottom: 25px;
     height: 25px;
     width: calc(100% - 23px);
 }
 .login-input:focus {
-    border-color:#6e8095;
+    border-color:green;
     outline: none;
 }
 .login-button {
     color: #fff;
-    background: #55a1ff;
+    background: green;
     border: 0;
     outline: 0;
     width: 100%;
@@ -38,13 +37,13 @@ h1.login-title {
     cursor: pointer;
 }
 .link {
-    color: #666;
+    color: green;
     font-size: 15px;
     text-align: center;
     margin-bottom: 0px;
 }
 .link a {
-    color: #666;
+    color: green;
 }
 h3 {
     font-weight: normal;

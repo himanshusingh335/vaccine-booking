@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <title>Get CovidFreeNated- Registration</title>
     <link rel="stylesheet" href="auth-style.css"/>
+    <script src="validation.js"></script> 
 </head>
 <body>
 <?php
@@ -32,7 +33,7 @@
         }
     } else {
 ?>
-    <form class="form" action="" method="post">
+    <form name="form" class="form" onsubmit="return validateform()" method="post">
         <h1 class="login-title">Get CovidFreeNated- Registration</h1>
         <input type="text" class="login-input" name="username" placeholder="Username" required />
         <input type="text" class="login-input" name="email" placeholder="Email Adress">

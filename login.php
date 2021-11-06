@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Login</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="auth-style.css"/>
 </head>
 <body>
 <?php
@@ -13,14 +13,12 @@
         header("Location: dashboard.php");
     }
    
-
-    // When form submitted, check and create user session.
     if (isset($_POST['username'])) {
-        $username = stripslashes($_REQUEST['username']);    // removes backslashes
+        $username = stripslashes($_REQUEST['username']);
         $username = mysqli_real_escape_string($con, $username);
         $password = stripslashes($_REQUEST['password']);
         $password = mysqli_real_escape_string($con, $password);
-        // Check user is exist in the database
+
         $query    = "SELECT * FROM `users` WHERE username='$username'
                      AND password='" . md5($password) . "'";
         $result = mysqli_query($con, $query) or die(mysql_error());
@@ -28,7 +26,6 @@
         if ($rows == 1) {
             $_SESSION['username'] = $username;
 
-            // Redirect to user dashboard page
             header("Location: dashboard.php");
         } else {
             echo "<div class='form'>

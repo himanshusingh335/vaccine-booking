@@ -8,6 +8,7 @@ include("auth_session.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="dashboard-style.css?version=51"/>
+    <script src="validation.js"></script>
 </head>
 
 <body>
@@ -19,8 +20,11 @@ include("auth_session.php");
     </div>
 
     <div class="navbar">
-        <a href="#footer">Got to Bottom</a>
         <a href="bookings.php">My Bookings</a>
+        <a href="#footer">Got to Bottom</a>
+        <a href="logout.php">Logout</a>
+
+        
 
     </div>
 
@@ -46,14 +50,15 @@ include("auth_session.php");
             header("Location: bookings.php");
         }else{
             echo "<div class='form'>
-            <h3>There was an error !!</h3><br/>
+            <h3>Error: Either db server is down or null data was passed in the form</h3><br/>
             </div>";
         }
         }
     else {
 ?>
     <h2>Book Slot</h2>
-            <form class="form" method="post" name="book">
+    Note: You can book vaccination slots for your family members as well as yourself.<br><br>
+            <form class="form" method="post" name="book" onsubmit="return validateBooking()">
                 <label for="fname">First name:</label><br>
                 <input type="text" id="fname" name="fname"><br>
                 <label for="age">Age:</label><br>

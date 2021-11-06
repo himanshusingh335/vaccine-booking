@@ -15,20 +15,21 @@ include("db.php");
 
 <body>
     <div class="header">
-        <h1>Get CovidFreeNated</h1>
-        <p>Your Bookings</p>
+        <h1>Your Bookings</h1>
+        <p>Vaccination Appointments registered under this account will appear here</p>
     </div>
     <?php
 
 $accid=$_SESSION['username'];
 $result = mysqli_query($con,"SELECT * FROM Bookings WHERE Booking_Account_Id='$accid' ");
 
+echo "Vaccination appointments made under this account: <br><br>";
 echo "<table border='1'>
 <tr>
 <th>Name</th>
 <th>Age</th>
 <th>Address</th>
-<th>Date of Vaccination</th>
+<th>Date of Vaccination Appointment</th>
 </tr>";
 
 while($row = mysqli_fetch_array($result))

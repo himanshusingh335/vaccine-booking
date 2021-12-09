@@ -79,7 +79,7 @@ include("auth_session.php");
             <h2>Is online registration mandatory for Covid 19 vaccination?</h2>
             <img class="fakeimg"
                 src="https://wwwassets.rand.org/content/rand/blog/2020/08/its-going-to-be-the-vaccination-stupid/jcr:content/par/teaser.aspectfit.0x1200.jpg/1598296544648.jpg"
-                style="height:200px;"></img>
+                style="height:400px"></img>
             <p>
                 Vaccination Centres provide for a limited number of on-spot registration slots every day. Beneficiaries
                 aged 45 years and above can schedule appointments online or walk-in to vaccination centres.
@@ -92,7 +92,7 @@ include("auth_session.php");
             <br>
             <h2>Where will I receive confirmation of date and time of vaccination?</h2>
             <img class="fakeimg" src="https://www.jhsph.edu/sebin/z/z/SARS-CoV-2-vaccine-820x440.jpg"
-                style="height:200px;"></img>
+                style="height:500px;"></img>
             <p>
                 Once an appointment is scheduled, you will receive the details of the vaccination centre, date and time
                 slot chosen for appointment in an SMS sent to your registered mobile number. You can also download the

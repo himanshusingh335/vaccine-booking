@@ -137,6 +137,7 @@ button{
 <?php
     require('db.php');
     session_start();
+    echo $_SESSION['username'];
     if ( isset($_SESSION['username'])) {
         header("Location: dashboard.php");
     }

@@ -10,6 +10,7 @@
    $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
    echo $cleardb_db;
+   echo $cleardb_server;echo $cleardb_username;echo $cleardb_password;
     
     if (mysqli_connect_errno()){
         echo "Failed to connect to MySQL: " . mysqli_connect_error();

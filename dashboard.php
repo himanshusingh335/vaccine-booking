@@ -35,17 +35,17 @@ include("auth_session.php");
 
     if (isset($_POST['fname'])) {
         $booking_account_id=stripslashes($_SESSION['username']);
-        $booking_account_id = mysqli_real_escape_string($con, $booking_account_id);
+        $booking_account_id = mysqli_real_escape_string($conn, $booking_account_id);
         $fname = stripslashes($_REQUEST['fname']);
-        $fname = mysqli_real_escape_string($con, $fname);
+        $fname = mysqli_real_escape_string($conn, $fname);
         $age =$_REQUEST['age'];
         $address = stripslashes($_REQUEST['address']);
-        $address = mysqli_real_escape_string($con, $address);
+        $address = mysqli_real_escape_string($conn, $address);
         $date = stripslashes($_REQUEST['date']);
-        $date = mysqli_real_escape_string($con, $date);
+        $date = mysqli_real_escape_string($conn, $date);
         $query    = "INSERT into `bookings` (Name, Age, Address, Bookings_Date, Booking_Account_Id)
         VALUES ('$fname', $age, '$address', '$date','$booking_account_id')";
-        $result   = mysqli_query($con, $query);
+        $result   = mysqli_query($conn, $query);
         if($result){
             header("Location: bookings.php");
         }else{

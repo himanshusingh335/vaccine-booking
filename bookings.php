@@ -21,7 +21,7 @@ include("db.php");
     <?php
 
 $accid=$_SESSION['username'];
-$result = mysqli_query($con,"SELECT * FROM Bookings WHERE Booking_Account_Id='$accid' ");
+$result = mysqli_query($conn,"SELECT * FROM Bookings WHERE Booking_Account_Id='$accid' ");
 
 echo "Vaccination appointments made under this account: <br><br>";
 echo "<table border='1'>
@@ -43,7 +43,7 @@ echo "</tr>";
 }
 echo "</table>";
 
-mysqli_close($con);
+mysqli_close($conn);
 ?>
 
 </body>

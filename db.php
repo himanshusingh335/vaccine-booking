@@ -15,22 +15,5 @@
 
     $query    = "SELECT * FROM `bookings`";
     $result = mysqli_query($con, $query) or die(mysql_error());
-    echo "<table border='1'>
-    <tr>
-    <th>Name</th>
-    <th>Age</th>
-    <th>Address</th>
-    <th>Date of Vaccination Appointment</th>
-    </tr>";
-
-    while($row = mysqli_fetch_array($result))
-    {
-    echo "<tr>";
-    echo "<td>" . $row['Name'] . "</td>";
-    echo "<td>" . $row['Age'] . "</td>";
-    echo "<td>" . $row['Address'] . "</td>";
-    echo "<td>" . $row['Bookings_Date'] . "</td>";
-    echo "</tr>";
-    }
-    echo "</table>";
+    echo $result
 ?>

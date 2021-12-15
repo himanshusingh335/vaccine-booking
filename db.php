@@ -14,6 +14,6 @@
     }
 
     $query    = "SELECT * FROM `bookings`";
-    $result = mysqli_query($con, $query) or die(mysql_error());
+    $result = mysqli_query($conn, $query) or die(mysqli_error());
     echo $result
 ?>

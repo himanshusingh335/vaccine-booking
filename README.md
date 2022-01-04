@@ -5,7 +5,7 @@ crafted with <span style="color: #8b0000;">&hearts;</span> by Himanshu Singh
 
 ## Built With
 
-This app is built using LAMP Stack.
+This app is built using LAMP Stack and deployed using Heroku.
 
 ## Description
 

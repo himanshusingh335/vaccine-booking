@@ -1,5 +1,5 @@
 {
-    "name": "Vaccine Booking Website",
+    "name": "php/vaccinebooking",
     "description": "Any user with an account can book a slot for covid vaccination for himself as well as his family members.",
     "require": {
         "php": "*"
